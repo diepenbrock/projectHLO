@@ -2,6 +2,17 @@ doctype html
 html(lang='en')
     head
         //meta(http-equiv="Content-Security-Policy", content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; connect-src 'self'; child-src 'none'; img-src 'self'; style-src 'self' https://cdnjs.cloudflare.com; object-src 'none'")
+
+
+        // Global site tag (gtag.js) - Google Analytics
+        script(async src="https://www.googletagmanager.com/gtag/js?id=UA-111704459-1")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-111704459-1');
+
+
         meta(http-equiv="content-type", content="text/html; charset=utf-8")
         meta(http-equiv="X-UA-Compatable" content="IE=edge")
         meta(name="viewport", content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0")
@@ -71,10 +82,7 @@ html(lang='en')
         //script(src="../../bower_components/jquery/dist/jquery.min.js")
 
 
-        // Fancybox for image gallery (will likely use dimsemenov/Magnific-Popup)
-        //link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css")
-        //script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js")
-
+        // Use dimsemenov/Magnific-Popup for photo gallery
 
     body
 
@@ -148,7 +156,7 @@ html(lang='en')
                             | is 
                             span our value.
 
-                        p Welcome to HLO. Our aim to be a socially responsible organization and act from every well thought and valued approach with you as our principle. Come support HLO by becoming a member or partner.
+                        p Welcome to HLO. We aim to be socially responsible and act from every well thought and valued approach with "You First" as our principle. Come support HLO by becoming a member or partner.
                         
                 // END HEADER 
 
@@ -166,7 +174,8 @@ html(lang='en')
                                 p.intro Your 
                                     span healthcare 
                                     | wants and needs program.
-                                p.para  Our uHealth program offers a subsidized healthcare cost for general full laboratory services and radiology imaging procedures. Our awarded uHealth program allows our memebers to receive full general health services at an unbeatable price. With most members already having health insurance, some of our rewards are in lowering your monthly health insurance cost while granting premium services with the highest qualified specialists in your area. We go above and beyond to cater to our member's, saving them precious time and money. Come sign up for a membership and a free limited time trial so you can get the most out of your healthcare. 
+                                p.para Our uhealth program offers a direct healthcare cost for full laboratory services and radiology imaging procedures. We encourage our partners and individuals whose wants or needs are in health and care to avail from us lower market price services with highest quality. Even of your insurance got you covered with your expenses, discounts are still rewarded. Great VALUE for you  and your family. 
+                                    | Come sign up for a membership!
 
                         .container-separator
                             .section-separator
